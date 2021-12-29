@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name='snooki-server',
+    name='snooki-api',
     version='0.0.1',
-    description='Microserver REST API for pi.',
+    description='REST API for pi (pet project).',
     install_requires=[
         'Flask',
         'Flask-SQLAlchemy',
