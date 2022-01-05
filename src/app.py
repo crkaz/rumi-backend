@@ -1,9 +1,15 @@
 from flask import Flask
-from endpoints.todo_blueprint import todo_blueprint
+
+from cache import cache
+from config import config
+from controllers.list_blueprint import list_blueprint
+from controllers.list_item_blueprint import list_item_blueprint
 
 app = Flask(__name__)
-
-app.register_blueprint(todo_blueprint, url_prefix='/todo')
+app.config.from_mapping(config)
+cache.init_app(app)
+app.register_blueprint(list_blueprint, url_prefix='/list')
+app.register_blueprint(list_blueprint, url_prefix='/list/item')
 
 
 @app.route('/')
