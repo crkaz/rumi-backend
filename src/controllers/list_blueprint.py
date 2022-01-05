@@ -6,6 +6,7 @@ CACHE_KEY = 'all_lists'
 
 list_blueprint = Blueprint('list_blueprint', __name__)
 
+@list_blueprint.route('/create')
 def create_list():
     return 'create'
 

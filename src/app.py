@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config.from_mapping(config)
 cache.init_app(app)
 app.register_blueprint(list_blueprint, url_prefix='/list')
-app.register_blueprint(list_blueprint, url_prefix='/list/item')
+app.register_blueprint(list_item_blueprint, url_prefix='/list/item')
 
 
 @app.route('/')

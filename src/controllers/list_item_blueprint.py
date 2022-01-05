@@ -4,6 +4,7 @@ from cache import cache
 list_item_blueprint = Blueprint('list_item_blueprint', __name__)
 
 
+@list_item_blueprint.route('/create')
 def create_item():
     return 'create'
 
