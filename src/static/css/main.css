@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  display: table;
+}
+
+header {
+  display: flex;
+  background-color: #292929;
+  color: white;
+}
+
+footer {
+  display: table-row;
+  height: 0;
+  text-align: center;
+  background-color: #000;
+  color: white;
+}
+
+.pl-1 {
+  padding-left: 15px;
+}
+
+.list__bullet--none {
+  list-style: none;
+}
